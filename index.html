@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  
+    <h1>Hotel Booking Registration Form</h1>
+    <hr />
+    <main>
+      <form id="form">
+      <section id="customer-info">
+        <h2>Customer Info</h2>
+      
+          <label for="customername">Customer Name: <span style="color: red; font-weight: bolder;" required>*</span></label>  
+          <input type="text" id="name" class="style" name="name" placeholder="text-input"  />
+  
+          <label for="Date">Check-in Date:<span style="color: red; font-weight: bolder;" required>*</span></label>
+          <input type="date" id="CheckIn" class="style" name="CheckIn" placeholder="Date"  />
+          <!-- <label for="">Check-Out Date: <span style="color: red; font-weight: bolder;" required>*</span></label>
+          <input type="date" id="CheckOut" class="style" name="CheckOut" placeholder="date" > -->
+      
+          <label for="days">Total No of days:<span style="color: red; font-weight: bolder;" required>*</span></label>
+          <input type="number" id="No_Of_Days" name="No_Of_Days" class="style"  />
+        
+          <label for="person">Total No of Persons:<span style="color: red; font-weight: bolder;" required>*</span></label>
+          <input type="number" id="No_Of_Person" name="No_Of_Person" class="style"  />
+      </section>
+      <section id="Room-Information">
+              <h2>Room Rates:</h2>
+              <div class="Room-rates">
+                <!-- <div class="main"> -->
+                  <div class="center">
+                <div class="rooms"><div><label for="delux">Deluxe Room (2500/-) <img src="deluxe room.webp" alt="Suite Room" class="img"></label> </div>
+                <div class="center"><input type="radio" id="delux" class="radio" value="2500" name="room" required></div>
+              </div>
+                <div class="rooms"><div><label for="suite">Suite Room (4000/-) <img src="suite room.webp" alt="Suite Room" class="img"></label> </div>
+                <div class="center"><input type="radio" id="suite" class="radio" value="4000" name="room" required></div>
+              </div>
+              </div>
+            </div>
+          <!-- </div> -->
+             
+            <h2>Amenities:</h2>
+            <div class="center">
+               <div class="rooms"><div><label for="AC-Cost" >AC (1000/-) <img src="AC.webp" alt="AC" class="img"> </label></div>
+                <div class="center"><input type="checkbox" id="AC" class="radio" name="AC" value="1000" ></div></div>
+                  <div class="rooms"><div><label for="locker" > Locker (300/-) <img src="locker.webp" alt="Locker" class="img"></label></div>
+               <div class="center"><input type="checkbox" id="Locker" class="radio" name="Locker" value="300"></div></div>
+             </div>
+            </div>
+      </section>
+      <section id="Payment">
+        <h2>Advance Payment</h2>
+          <label for="advance">Advance Amount:</label>
+          <input type="amount" id="advance" name="Advance Amount" />
+      
+        <h4>Balance Amount</h4>
+      
+          <label for="balance">Balance:</label>
+          <input type="amount" id="balance" name="balance" />
+      </section>
+            
+            <h4></h4>
+           
+              <label for="total-room-cost"> Total Cost: </label>
+              <input type="number" id="total"  />
+        
+              <button type="submit" class="btn-primary">Submit</button>    
+              
+              <footer>
+                <div id="output"><h2>Details</h2></div>
+                <div><h3>Please note:</h3>
+               <p>
+                Upto 2 People: No Change in Cost <br>
+                Per Day Cost for Extra Person: 1000/- 
+               </p> 
+              
+              </div>
+
+              </footer>
+          </form>
+    </main>
+  </body>
+</html>
+<script defer type="text/javascript" src="main.js"></script>

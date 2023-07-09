@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(29, 28, 28);
+    background-image: url('./hotel.jpg'); 
+    background-repeat: no-repeat;
+    font-family: 'Roboto Serif', serif;
+    margin: 8rem;
+   
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+form {
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: rgb(255, 253, 253);
+    padding: 1rem;
+    border-radius:.6px;
+}
+label {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+footer {
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.preference {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0.5rem;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font: inherit;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 0.25rem;
+    color: rgb(61, 58, 58);
+}
+input:focus,
+textarea:focus {
+    background-color: rgb(220, 128, 220);
+    color: rgb(32, 5, 63);
+    border-color: rgb(32, 5, 63);
+
+}
+button {
+    display: block;
+
+}
+button:hover {
+    cursor: pointer;
+    opacity:.7;
+
+}
+/* .main {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+} */
+.img {
+    display: flex;
+    height: 9rem;
+    width: 9rem;
+}
+
+.rooms
+{
+    display: flex;
+}
+.center{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+}
